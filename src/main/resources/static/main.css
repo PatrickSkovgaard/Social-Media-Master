@@ -1,0 +1,148 @@
+body {
+    height: 100%;
+    background-image: url(../static/photo-1506220926022-cc5c12acdb35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    font-family: "Trebuchet MS";
+    font-style: italic;
+    font-size: 50px;
+}
+
+header h3 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    color: greenyellow;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: "Times New Roman";
+    color: wheat;
+}
+
+#user\ Input {
+    display: flex;
+    justify-content: center;
+    color: magenta;
+
+}
+
+#user\ Input label {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    justify-content: center;
+    color: snow;
+}
+
+#colors label {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 2px;
+    color: antiquewhite;
+}
+
+#colors #rød {
+    color: red;
+}
+
+#colors #orangee {
+    color: orange;
+}
+
+#colors #gul {
+    color: yellow;
+}
+
+#colors #grøn {
+    color: green;
+}
+
+#colors #turkis {
+    color: turquoise;
+}
+
+#colors #blå {
+    color: blue;
+}
+
+#colors #viol {
+    color: violet;
+}
+
+#colors #andet {
+    color: white;
+}
+
+#publicText {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 12px;
+    color: dodgerblue;
+}
+
+#Publicity {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#Publicity label {
+    display: flex;
+    margin-left: 2px;
+    margin-right: 20px;
+    color: antiquewhite;
+}
+
+#Publicity #ja {
+    color: lime;
+}
+
+#Publicity #nej {
+    color: red;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    color: black;
+    background-color: orange;
+}
+
+button:hover {
+    color: orangered;
+    background-color: black;
+}

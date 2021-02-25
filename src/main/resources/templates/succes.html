@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../static/succes.css">
+    <meta charset="UTF-8" >
+    <title>Succes</title>
+</head>
+<body>
+<h1>Succes! Here's your post: </h1>
+
+<section id="title">
+    <h3>Title:</h3>
+    <p th:text="${title}"></p>
+</section>
+
+<section id="content">
+    <h3>Content:</h3>
+    <p th:text="${content}"></p>
+</section>
+
+<section id="date">
+    <h3>Date:</h3>
+    <p th:text="${date}"></p>
+</section>
+
+<section id="color">
+    <h3>Color:</h3>
+    <p th:text="${color}"></p>
+</section>
+
+<section id="publicOrNot">
+    <h3>Public?</h3>
+    <p th:text="${publicOrNot}"></p>
+</section>
+</body>
+</html>

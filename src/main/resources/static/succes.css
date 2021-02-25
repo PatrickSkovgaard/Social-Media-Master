@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(../static/photo-1506220926022-cc5c12acdb35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    font-style: italic;
+    font-family: "Trebuchet MS";
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    color: lime;
+    font-family: Arial;
+    font-style: italic;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: snow;
+    font-size: 18px;
+    font-family: "Times New Roman";
+}
+

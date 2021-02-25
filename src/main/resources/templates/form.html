@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="../static/main.css">
+    <meta charset="UTF-8">
+    <title>Parrot</title>
+</head>
+<body>
+<header>
+    <h1>Parrot</h1>
+    <h3>The social media that lets you share your thoughts as openly as a parrot</h3>
+    <p>Do you want to create a post? Go right ahead below!</p>
+</header>
+<form action="/submit-post" method="post">
+    <section id="all">
+        <section id="user Input">
+            <label for="title">Title of your post:</label>
+            <input type="text" name="title" id="title">
+
+            <label for="content">Share your thoughts:</label>
+            <input type="text" name="content" id="content">
+
+            <label for="date">What's today's date?:</label>
+            <input type="date" name="date" id="date">
+        </section>
+
+        <p>What's your favorite color?</p>
+
+        <section id="colors">
+
+            <label for="red" id="rød">Red</label>
+            <input type="radio" id="red" name="color" value="red">
+
+            <label for="orange" id="orangee">Orange</label>
+            <input type="radio" id="orange" name="color" value="orange">
+
+            <label for="yellow" id="gul">Yellow</label>
+            <input type="radio" id="yellow" name="color" value="yellow">
+
+            <label for="green" id="grøn">Green</label>
+            <input type="radio" id="green" name="color" value="green">
+
+            <label for="turqoise" id="turkis">Turqoise</label>
+            <input type="radio" id="turqoise" name="color" value="turqoise">
+
+            <label for="blue" id="blå">Blue</label>
+            <input type="radio" id="blue" name="color" value="blue">
+
+            <label for="violet" id="viol">Violet</label>
+            <input type="radio" id="violet" name="color" value="violet">
+
+            <label for="other" id="andet">Other</label>
+            <input type="radio" id="other" name="color" value="other">
+        </section>
+
+        <section id="publicText">
+            <label for="public">Public:</label>
+            <input type="hidden" id="public" name="public" value="public">
+        </section>
+
+        <section id="Publicity">
+
+            <input type="radio" id="yes" name="radio" value="yes" checked>
+            <label for="yes" id="ja">Yes</label>
+
+            <input type="radio" id="no" name="radio" value="no">
+            <label for="no" id="nej">No</label>
+        </section>
+
+        <section id="button">
+            <button type="submit">Submit your post!</button>
+        </section>
+
+    </section>
+</form>
+</body>
+</html>
