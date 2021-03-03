@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title th:replace="fragments/head.html(currentPage='Dashboard')"></title>
 </head>
 <body>
-<ul th:each="posts : ${post}">
-    <li th:text="${posts}"></li>
-</ul>
+
+    <ul th:each="posts : ${post}">
+        <li th:text="${posts}"></li>
+    </ul>
+
+    <!-- Hente en footer fra en anden html fil, som man kan bruge på alle sine sider = fragment -->
+    <footer th:replace="fragments/footer.html"></footer>
+
 </body>
 </html>

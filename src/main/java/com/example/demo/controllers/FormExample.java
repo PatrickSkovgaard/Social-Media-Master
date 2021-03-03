@@ -48,14 +48,6 @@ public class FormExample {
         Post post = new Post(title, content, date, color, publicOrNot);
         posts.add(post);
 
-        /*
-        indhold.add(title);
-        indhold.add(content);
-        indhold.add(date);
-        indhold.add(color);
-        indhold.add(publicOrNot);
-*/
-
         return "redirect:/succes";
     }
 
@@ -79,5 +71,17 @@ public class FormExample {
         model.addAttribute("post", posts);
 
         return "dashboard";
+    }
+
+
+    @GetMapping(value="/practice")
+    public String practiceStuff(Model model){
+        boolean isUserLoggedIn = false;
+        model.addAttribute("isUserLoggedIn", isUserLoggedIn);
+
+        String userType = "premium";
+        model.addAttribute("userType",userType);
+
+        return "practice";
     }
 }

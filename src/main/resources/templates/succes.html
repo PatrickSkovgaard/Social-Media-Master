@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="../static/succes.css">
     <meta charset="UTF-8" >
-    <title>Succes</title>
+    <title th:replace="fragments/head.html(currentPage='Succes')"></title>
 </head>
 <body>
 <h1>Succes! Here's your post: </h1>
@@ -32,5 +32,6 @@
     <h3>Public?</h3>
     <p th:text="${publicOrNot}"></p>
 </section>
+<footer th:replace="fragments/footer.html"></footer>
 </body>
 </html>

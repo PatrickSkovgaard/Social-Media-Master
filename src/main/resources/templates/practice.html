@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head th:replace="fragments/head.html(currentPage='Practice')">
+        <meta charset="UTF-8">
+        <title th:replace="fragments/head.html(currentPage='Practice')"></title>
+    </head>
+    <body>
+        <!-- IF STATEMENT -->
+        <p th:if="${isUserLoggedIn} == true">Welcome back fuckface</p>
+        <p th:unless="${isUserLoggedIn} == true">Please log in dipshit</p>
+
+        <!-- SWITCH STATEMENT -->
+        <p th:switch="${userType}">
+            <span th:case="'free'">Consider paying , you broke ass</span>
+            <span th:case="'paying'">Consider upgrading to Premium, you greedy son of a bitch</span>
+            <span th:case="'premium'">We hope you are happy with your account, motherfuck-face</span>
+        </p>
+
+        <!-- LINK URL -->
+        <a href="/submit"
+           th:href="@{/submit}">Click here to submit your shit bruh</a>
+        <br>
+        <a href="/succes"
+           th:href="@{https://www.youtube.com/watch?v=DLzxrzFCyOs&ab_channel=AllKindsOfStuff}">CLICK FOR HOT GIRL!</a>
+
+        <footer th:replace="fragments/footer.html"></footer>
+    </body>
+</html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="../static/main.css">
     <meta charset="UTF-8">
-    <title>Parrot</title>
+    <title th:replace="fragments/head.html(currentPage='Parrot')"></title>
 </head>
 <body>
 <header>
@@ -70,8 +70,8 @@
         <section id="button">
             <button type="submit">Submit your post!</button>
         </section>
-
     </section>
 </form>
+<footer th:replace="fragments/footer.html"></footer>
 </body>
 </html>
