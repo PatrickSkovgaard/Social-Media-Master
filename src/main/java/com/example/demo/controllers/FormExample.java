@@ -18,10 +18,9 @@ public class FormExample {
     ArrayList<Post> posts = new ArrayList<>();
 
 
-    @GetMapping(value= "/")
-    @ResponseBody
+    @GetMapping(value= "/index")
     public String homePage(){
-        return "";
+        return "index";
     }
 
 
@@ -73,7 +72,7 @@ public class FormExample {
         return "dashboard";
     }
 
-
+/*
     @GetMapping(value="/practice")
     public String practiceStuff(Model model){
         boolean isUserLoggedIn = false;
@@ -84,4 +83,5 @@ public class FormExample {
 
         return "practice";
     }
+ */
 }
