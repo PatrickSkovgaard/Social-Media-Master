@@ -62,6 +62,16 @@ p {
     color: snow;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: snow;
+    font-size: 17px;
+    margin-top: 20px;
+    font-family: "Times New Roman";
+}
+
 #colors label {
     display: flex;
     justify-content: space-between;
@@ -145,4 +155,14 @@ button {
 button:hover {
     color: orangered;
     background-color: black;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: khaki;
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: "Times New Roman";
 }

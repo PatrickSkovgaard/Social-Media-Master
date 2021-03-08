@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+    background-image: url(../static/photo-1506220926022-cc5c12acdb35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    margin-top: 300px;
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-size: 30px;
+}

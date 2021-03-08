@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" href="../static/dashboard.css">
     <title th:replace="fragments/head.html(currentPage='Dashboard')"></title>
 </head>
 <body>
@@ -9,8 +10,9 @@
         <li th:text="${posts}"></li>
     </ul>
 
-    <!-- Hente en footer fra en anden html fil, som man kan bruge på alle sine sider = fragment -->
-    <footer th:replace="fragments/footer.html"></footer>
-
 </body>
+<footer>
+    <a href="/submit">Click here to submit</a>
+    <p>Made in China</p>
+</footer>
 </html>

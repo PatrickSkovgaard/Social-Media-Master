@@ -17,7 +17,7 @@ public class Post {
 
     @Override
     public String toString(){
-        return "Post >  Title: " + title + " | Content: " + content + " | Date: " + date +
+        return "Post > Title: " + title + " | Content: " + content + " | Date: " + date +
                 " | Your chosen color: " + color + " | Public Post? " + publicOrNot;
     }
 }
